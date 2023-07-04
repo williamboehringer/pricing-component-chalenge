@@ -1,0 +1,137 @@
+:root {
+    --title-color:  hsl(227, 35%, 25%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Manrope;
+    font-size: 15px;
+    color: hsl(225, 20%, 60%);
+}
+
+main {
+    height: 100svh;
+    background-color: hsl(230, 100%, 99%);
+}
+
+.header {
+    position: relative;
+    height: 50%;
+    display: grid;
+    align-content: start;
+    border-bottom-left-radius: 150px;
+    background-image: url(images/bg-pattern.svg);
+    background-size: cover;
+    padding: 6rem 2rem;
+    gap: 1rem;
+}
+
+.title {
+    height: fit-content;
+}
+
+.title img {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 9.5rem;
+}
+
+.title h1 {
+    color: var(--title-color);
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+.subtitle p {
+    text-align: center;
+}
+
+.container {
+    position: absolute;
+    z-index: 10;
+    top: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0px 5px 5px 5px hsla(240, 30%, 88%, 0.3);
+    border-radius: 5px;
+    height: 60%;
+    width: 85%;
+}
+
+.pageviews {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.pricing-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    height: 60%;
+}
+
+
+.slider {
+    appearance: none;
+    background-color: hsl(174, 77%, 80%);
+    border: none;
+    outline: none;
+    height: 5px;
+    border-radius: 25px;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    background-color: hsl(174, 77%, 80%);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.slider:hover::-webkit-slider-thumb {
+    background-color: hsl(174, 86%, 45%);
+    box-shadow: 0px 10px 10px 10px hsl(174, 77%, 80%, .4)
+}
+
+.price {
+    font-size: 2rem;
+    color: var(--title-color);
+}
+
+.toggle {
+    display: flex;
+}
+
+.info-section {
+    padding: 2rem 1rem;
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+    height: 40%;
+}
+
+.info {
+    display: grid;
+    gap: .5rem;
+}
+
+button {
+    height: 2.5rem;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    background-color: hsl(227, 35%, 25%);
+}
+
+button:focus {
+    outline: none;
+}
+
